@@ -24,9 +24,11 @@ function onFormSearchRepository(e) {
     fetchRepository(valueNormalized)
       .then(repositories => {
         const { items } = repositories;
-        const findRepository = items.filter(({ name }) =>
-          name.toLowerCase().includes(valueNormalized)
-        );
+        console.log(items);
+        const findRepository = items.filter(({ name }) => {
+          return name.toLowerCase().includes(valueNormalized);
+        });
+        console.log(findRepository);
 
         const markupList = createRepositoriesList(findRepository);
         refs.listRef.innerHTML = markupList;
