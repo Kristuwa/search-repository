@@ -111,6 +111,6 @@ ul {
   margin-bottom: 10px;
 }
 
-.list__title-item span {
+.link-text {
   color: rgb(174, 71, 20);
 }

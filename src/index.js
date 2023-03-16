@@ -77,7 +77,7 @@ function createRepositoriesList(repositories) {
       }
 
       return `<li class="list__item">
-		<h2 class="list__title-item">Название репозитория: <span>${name}</span></h2>
+		<h2 class="list__title-item">Название репозитория: <a href='${svn_url}' class="list__link-item link" target="_blank" rel='noreferrer noopener nofollow'><span class="link-text">${name}</span></a></h2>
 		<p class="list__item-description"><b>Ссылка на репозиторий:</b> <a href='${svn_url}' class="list__link-item link" target="_blank" rel='noreferrer noopener nofollow'>${svn_url}</a></p>
 		<p class="list__item-description"><b>Описание:</b> ${description}</p>
 		<p class="list__item-item-description"><b>Домашняя страница:</b> ${homePage}</p>
@@ -96,7 +96,7 @@ function createRepositoryInformation({ svn_url, name, description, homepage }) {
     homePage = 'Нет описания';
   }
 
-  return `<div class="repository-info"><h2 class="list__title-item">Название репозитория: <span>${name}</span></h2>
+  return `<div class="repository-info"><h2 class="list__title-item">Название репозитория: <a href='${svn_url}' class="list__link-item link" target="_blank" rel='noreferrer noopener nofollow'><span class="link-text">${name}</span></a></h2>
   <p class="list__item-description"><b>Ссылка на репозиторий:</b> 
   <a href='${svn_url}' class="list__link-item link" target="_blank" rel='noreferrer noopener nofollow'>${svn_url}</a></p>
 		 <p class="list__item-description"><b>Описание:</b> ${description}</p>

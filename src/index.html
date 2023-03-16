@@ -12,7 +12,13 @@
     <form class="form-search">
       <label
         ><span class="search-title">Введите название репозитория в поле </span
-        ><input type="text" class="search-input" name="text"
+        ><input
+          type="text"
+          class="search-input"
+          name="text"
+          required
+          minlength="3"
+          placeholder="Введите название..."
       /></label>
       <button type="submit" class="button-submit">Поиск</button>
     </form>
